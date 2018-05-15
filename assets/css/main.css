@@ -1,8 +1,20 @@
+body {
+  background: #444;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 h1,
 p {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 2.7em;
+  line-height: 0;
+}
+header {
+  padding: 20px;
 }
 ul.cards {
   list-style: none;
@@ -14,10 +26,16 @@ ul.cards li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 5%;
+  margin: 2.5%;
+  padding: 2.5%;
+  border: 1px solid #eee;
   height: 150px;
   max-width: 150px;
+}
+ul.cards li:hover {
+  border-bottom: 2px solid #eee;
 }
 ul.cards li:hover span {
   opacity: 1;
@@ -25,5 +43,6 @@ ul.cards li:hover span {
 ul.cards li span {
   text-align: center;
   opacity: 0;
+  padding: 20px 0 0;
   transition: all 320ms ease-in-out;
 }

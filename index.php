@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <h1>Flashcards</h1>
-  <p>Hover over cards reveal anwser.</p>
+  <header>
+    <h1>Flashcards</h1>
+    <p>Hover over cards reveal anwser.</p>
+  </header>
   <ul class="cards">
   <?php
     // get images in dir
